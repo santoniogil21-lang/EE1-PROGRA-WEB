@@ -58,14 +58,8 @@ export function signIn(req, res) {
 }
 
 export function EE1(req, res) {
-  let fondos = [
-    "/assets/img/login-bg.png",
-    "/assets/img/login-bg2.png",
-    "/assets/img/login-bg3.jpg"
-  ];
   return res.render('website/ee1', {
     title: 'EVALUACION',
-    background: fondos[Math.floor(Math.random() * 3)]
   });
 }
 
