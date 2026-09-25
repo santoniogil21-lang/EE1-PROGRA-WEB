@@ -7,6 +7,7 @@ import { redirectIfAuthenticated, requireAuth } from '../configs/middlewares.js'
 const router = Router();
 
 router.get('/', controller.home);
+router.get('/ee1', controller.EE1);
 router.get('/convocatorias', controller.convocatorias);
 router.get('/login', controller.login);
 router.get('/register', controller.register);
